@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hall of Shame</title>
+</head>
+<body style="background-color:magenta">
+<h1><center>Hall of Shame!</center></h1>
+<h2><center>If you are below, kindly reconsider your life choices.</center></h2>
+{% for imagelist in imagelist %}
+<img src = "{{ url_for('static', filename=imagelist)}}" width=300px, height=300px>
+{% endfor %}
+</body>
+</html>
+
